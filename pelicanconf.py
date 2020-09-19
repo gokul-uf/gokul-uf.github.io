@@ -6,19 +6,27 @@ import datetime
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
 
-AUTHOR = "A blog-o-matic user"
-SITENAME = "My personal blog with blog-o-matic"
-SITESUBTITLE = "This is where I do test things"
+AUTHOR = "Gokul"
+AUTHORS = {
+    "Gokul" : {
+        "blurb": """OSS + Linux + Deep Learning""",
+        "url": "https://gokul-uf.github.io",
+    },
+}
+SITENAME = "O(lol N)"
+SITESUBTITLE = "Worst case you'll have a laugh"
 SITEURL = "/"
 DEFAULT_LANG = "en"
-DEFAULT_CATEGORY = "blog"
-CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
-CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
+DEFAULT_CATEGORY = "tech"
+SITE_DESCRIPTION = "Gokul's personal blog"
+# FEATURED_IMAGE = "https://iranzo.github.io/favicon.png"
+# CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
+# CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
 
 
 LANDING_PAGE_ABOUT = {
-    "title": "My blog",
-    "details": """<p>This website contains Info that might be interesting for you, enjoy!</p>""",
+    "title": "Welcome!",
+    "details": """<p>Lot's of stuff, hopefully some good. The first 100 articles you write will be crap, better get it out of the way soon!</p>""",
 }
 
 
@@ -32,7 +40,7 @@ PROJECTS = [
 
 
 LINKS = (
-    ("", "https://t.me/redken_bot"),
+    ("", ""),
     # ("RHJobs channel on TG", "https://t.me/rhjobs"),
 )
 
@@ -45,7 +53,7 @@ SOCIAL = (
 )
 
 
-# TWITTER_USERNAME = "fillit"
+TWITTER_USERNAME = "gokstudio"
 # Update if you use amazon links
 
 # GOOGLE_ANALYTICS tracking ID
@@ -58,12 +66,29 @@ SOCIAL = (
 
 # Extra files customization
 EXTRA_PATH_METADATA = {}
+# Take a look later
+# EXTRA_PATH_METADATA = {
+#     "extra/keybase.txt": {"path": "keybase.txt"},
+#     "extra/robots.txt": {"path": "robots.txt"},
+#     "extra/favicon.ico": {"path": "favicon.ico"},
+#     "extra/favicon.png": {"path": "favicon.png"},
+# }
 
 EXTRA_TEMPLATES_PATHS = [
     "plugins/revealmd/templates",  # eg: "plugins/revealmd/templates"
 ]
 
+# FAVICON = "extra/favicon.ico"
 STATIC_PATHS = ["images"]
+
+# STATIC_PATHS = [
+#     "images",
+#     "imagen",
+#     "extra/robots.txt",
+#     "extra/favicon.ico",
+#     "extra/keybase.txt",
+#     "extra/favicon.png",
+# ]
 
 # Photo Gallery plugin
 PHOTO_LIBRARY = "gallery-source/"
@@ -139,7 +164,7 @@ THEME = "themes/elegant"
 
 # elegant
 TYPOGRIFY = True
-RECENT_ARTICLE_SUMMARY = True
+RECENT_ARTICLE_SUMMARY = False
 RESPONSIVE_IMAGES = True
 
 MARKDOWN = {
